@@ -29,7 +29,8 @@
     <body>
         <header>
             <div class="intro">
-                <h1><img src="./assets/img/logo.svg">Epicode - Il blog dei developers</h1>
+                <img src="./assets/img/logo.svg">
+                <h1>Epicode - Il blog dei developers</h1>
             </div>
         </header>
         <article> <!-- or main -->
@@ -107,38 +108,31 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/qz0aGYrrlhU?si=kPvPN2Ri5yQ7LasS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="form" onsubmit="alert('Ti sei registrato alla nostra newsletter con successo!')">
+            <div>
                 <h3>Vuoi rimanere aggiornato su altre novita' del blog? Iscriviti alla nostra newsletter:</h3>
-                <form> <!-- can add method="post" -->
+                <form class="form" onsubmit="alert('Ti sei registrato alla nostra newsletter con successo!')"> <!-- can add method="post" -->
                     <label for="email">Email</label>
                     <input type="email" placeholder="Inserisci la tua email.." id="email" name="email" required>
                     <button>Iscriviti!</button>
                 </form>
             </div>
             <div class="correlated">
-                <h3>Articoli correlati</h3>
-                <p>
-                    <br>
-                    Validare il codice HTML
-                    <br>
-                    Categoria: develop
-                    <br>
-                    Data: 18-9-2020
-                </p>
-                <p>
-                    Correggere la sintassi
-                    <br>
-                    Categoria: develop
-                    <br>
-                    Data: 16-9-2020
-                </p>
-                <p>
-                    Meno Kb nella pagina
-                    <br>
-                    Categoria: ottimizzazione
-                    <br>
-                    Data: 30-9-2020
-                </p>
+                <h2>Articoli correlati</h2>
+                <div>
+                    <h3>Validare il codice HTML</h3>
+                    <p>Categoria: develop</p>
+                    <p>Data: 18-9-2020</p>
+                </div>
+                <div>
+                    <h3>Correggere la sintassi</h3>
+                    <p>Categoria: develop</p>
+                    <p>Data: 16-9-2020</p>
+                </div>
+                <div>
+                    <h3>Meno Kb nella pagina</h3>
+                    <p>Categoria: ottimizzazione</p>
+                    <p>Data: 30-9-2020</p>
+                </div>
             </div>
         
         </article>
