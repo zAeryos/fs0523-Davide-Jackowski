@@ -3,7 +3,7 @@
 :root {
     font-family: 'Prata', serif;
     font-family: 'Poppins', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .centered-page {
@@ -12,7 +12,8 @@
 }
 
 .logo {
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 300px;
 }
 
@@ -24,7 +25,7 @@
     border-top: 2px solid rgb(237, 219, 56);
 }
 
-#header {
+.title {
     margin-top: 2.8rem;
     margin-bottom: 0.3rem;
     margin-right: 100px;
@@ -67,6 +68,10 @@
 
 .centered {
     text-align: center;
+}
+
+.underline {
+    border-bottom: 1px solid cyan
 }
 
 
