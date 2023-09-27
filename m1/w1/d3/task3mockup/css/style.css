@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Prata&display=swap');
+
+:root {
+    font-family: 'Prata', serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.centered-page {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.logo {
+    padding-bottom: 20px;
+    width: 300px;
+}
+
+.topthing {
+    background-color: #fcf4de92;
+    color: rgb(12, 84, 84);
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border-top: 2px solid rgb(237, 219, 56);
+}
+
+.header {
+    margin-top: 2.8rem;
+    margin-bottom: 0.3rem;
+    margin-right: 100px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#focaccia {
+    border-radius: 2%;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.list li {
+    padding-bottom: 1rem;
+}
+
+
+.featured {
+    padding-left: 1rem;
+    border-left: 2px solid rgb(237, 219, 56);
+}
+
+.featured p {
+    margin: 0;
+}
+
+.color-blue {
+    color: rgb(0, 151, 151);
+}
+
+.color-lightgray {
+    color: lightslategray;
+}
+
+.color-red {
+    color: rgb(179 19 19)
+}
+
+.centered {
+    text-align: center;
+}
+
+
+/*  margin: 0 auto; 
+    (can search on whatthefont)
+    text decoration underline
+*/
