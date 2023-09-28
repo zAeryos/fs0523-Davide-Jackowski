@@ -21,22 +21,26 @@
                 </ul>
             </div>
         </header>
-        <article class="article">
+        <main id="main">
             <div class="title">
                 <h1>Come creare un template per i post</h1>
-                <p>di <span>Mario Rossi</span> - <span> pubblicato il 25-10-2020</span></p>
+                <p>
+                    <i class="fas fa-pen-square centered"></i> di Mario Rossi - <i class="fas fa-clock"></i> pubblicato il 25-10-2020
+                </p>
             </div>
-            <article class="content">
-                <div>
-                    <p>La prima cosa da fare e' suddividere in blocchi logici la pagina, identificando le parti comuni da applicare a tutte le pagine</p>
+            <article class="article">
+                <div class="list1">
+                    <p>La prima cosa da fare e' suddividere in blocchi logici la pagina, identificando le <strong>parti comuni</strong> da applicare a tutte le pagine</p>
                     <p>Le varie aree saranno quindi suddivise in:</p>
                     <ul>
                         <li>Contenuti di intestazione del tag <code>&lt;header></code></li>
                         <li>Contenuti centrali variabili del tag <code>&lt;main></code> (corpo principale)</li>
                         <li>Contenuti di fine pagina comuni, da inserire nel tag <code>&lt;footer></code></li>
                     </ul>
-                    <h2>Formattazione del codice</h2>
-                    <p>Il testo dell'articolo dovra' essere formato per identificare tutte le parti da selezionare con i CSS. Percio' i passi saranno:</p>
+                </div>
+                <div class="list2">
+                    <p>Formattazione del codice</p>
+                    <p>Il testo dell'articolo dovra' essere formato per identificare tutte le parti da <strong>selezionare con i CSS</strong>. Percio' i passi saranno:</p>
                     <ol>
                         <li>Progettare il markup assegnando ad ogni specifico testo il tag appropriato</li>
                         <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
@@ -45,7 +49,7 @@
                 </div>
                 <div class="table">
                     <p>L'applicazione di stili CSS e' cresciuta negli anni fino a raggiungere la diffusione pressoche' totale.</p>
-                    <h2>Diffusione dei CSS</h2>
+                    <h2 class="centered">Diffusione dei CSS</h2>
                     <table>
                         <thead>
                             <tr>
@@ -82,47 +86,47 @@
                             </tr>
                         </tbody>
                     </table>
+                    <p>Un test di validazione potra' essere fatto tramite il <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="text-blue">tool online</a> dedicato allo scopo.
+                    Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ad essere stati dei veri developers come loro:</p>
                 </div>
                 <div>
-                    <p>Un test di validazione potra' essere fatto tramite il <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">tool online</a> dedicato allo scopo.
-                    Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ad essere stati dei veri developers come loro:</p>
                     <iframe width="400" height="315" src="https://www.youtube.com/embed/qz0aGYrrlhU?si=kPvPN2Ri5yQ7LasS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
-            </article>
-            <aside>
-                <div class="newsletter">
-                    <h3>Vuoi rimanere aggiornato su altre novita' del blog? Iscriviti alla nostra newsletter:</h3>
+                <section class="newsletter">
+                    <p>Vuoi rimanere aggiornato su altre novita' del blog? Iscriviti alla nostra newsletter:</p>
                     <form class="form" onsubmit="alert('Ti sei registrato alla nostra newsletter con successo!')"> <!-- can add method="post" -->
-                        <label for="email">Email</label>
+                        <label for="email"></label>
                         <input type="email" placeholder="Inserisci la tua email.." id="email" name="email" required>
                         <button>Iscriviti!</button>
                     </form>
-                </div>
+                </section>
+            </article>
+            <aside>
                 <div class="correlated">
-                    <h2>Articoli correlati</h2>
+                    <h2 class="centered">Articoli correlati</h2>
                     <div>
-                        <h3>Validare il codice HTML</h3>
+                        <h3><a href="#" class="text-blue">Validare il codice HTML</a></h3>
                         <p>Categoria: develop</p>
                         <p>Data: 18-9-2020</p>
                     </div>
                     <div>
-                        <h3>Correggere la sintassi</h3>
+                        <h3><a href="#" class="text-blue">Correggere la sintassi</a></h3>
                         <p>Categoria: develop</p>
                         <p>Data: 16-9-2020</p>
                     </div>
                     <div>
-                        <h3>Meno Kb nella pagina</h3>
+                        <h3><a href="#" class="text-blue">Meno Kb nella pagina</a></h3>
                         <p>Categoria: ottimizzazione</p>
                         <p>Data: 30-9-2020</p>
                     </div>
                 </div>
             </aside>
-        </article>
+        </main>
         <footer>
-                <div class="copyright-info">
+                <div class="copyright-info text-white centered">
                     <p>Blog Epicode © 2023</p>
-                    <p>Testata Online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233.</p>
-                    <a href="mailto:info@epicode.school">info@epicode.school</a>
+                    <p>Testata Online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. </p>
+                    <p>P.IVA 00112233.<a href="mailto:info@epicode.school"><span>info@epicode.school</span></a></p>
                 </div>
         </footer>
     </body>

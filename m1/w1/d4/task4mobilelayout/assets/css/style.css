@@ -1,36 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /* IMPOSTAZIONI GENERALI */
 body {
     margin: 25px;
     background-image: url("../img/sfondo.png");
     box-sizing: content-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 img {
     max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, li, td, th{
-    font-size: 16px;
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 h1 {
-    font-size: 1.8rem;
-    font-weight: bold;
+    font-size: 2rem;
 }
 
 h2 {
-    font-size: 26px;
-    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 h3 {
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 1.17rem;
 }
 
+h4 {
+    font-size: 1rem;
+}
 .centered {
     text-align: center;
 }
@@ -40,7 +42,7 @@ h3 {
 }
 
 .text-blue {
-    color: blue;
+    color: rgb(3,109,134);
 }
 
 /* HEADER */
@@ -86,38 +88,149 @@ h3 {
 }
 
 /* ARTICLE */
-.article {
+#main {
     background: white;
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.16);
     padding-left: 25px;
     padding-right: 25px;
+    margin-bottom: 25px;
 }
 
-.article h1 {
+h1 {
     padding: 20px
 }
-/* ELEMENTI NEL MAIN - ARTICLE */
 
+h1 + p {
+    color: lightslategray;
+    padding: 20px;
+} 
+
+strong {
+    font-weight: bold;
+    color:#871387;
+}
+
+.list1 p, .list1 ul li, .list2 ol li{
+    margin-top: 16px;
+}
+.list1 ul li, .list2 ol li{
+    margin-left: 1.6em;
+    margin-bottom: 1.2m;
+}
+
+.article ul {
+    list-style: disc;
+}
+code {
+    background-color: #d0cfcf;
+    border: 1px solid #878686;
+    border-radius: 5px;
+}
+
+.list2 p {
+    margin-top:10px;
+}
+
+.list2 ol {
+    list-style: decimal;
+}
 /* TABELLE */
+.table p {
+    padding-top: 12px;
+    padding-bottom:12px
+}
+
+.table h2 {
+    margin:20px;
+}
+table {
+    margin-bottom: 2em;
+}
+
+thead tr {
+    background-color: #3d63b6;
+    color: white;
+}
+th, td {
+    padding: 12px 15px;
+    vertical-align: bottom;
+    text-align: center;
+}
+tbody tr {
+    border-bottom: 1px solid white;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: rgb(242, 241, 241);
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #3a65c1;
+}
+
+iframe {
+    border-radius: 20px;
+    height: 250px;
+    margin-bottom: 32px;
+}
 
 /* FORM */
+.newsletter {
+    background-color: rgb(242, 241, 241);
+    padding:15px;
+    margin-bottom: 2rem;
+    border: 1px solid #848484;
+}
+
+.newsletter p {
+    margin-bottom:10px
+}
+input {
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px dashed #474444;
+}
+button {
+    padding: 4px 7px;
+    background-color: #385cab;
+    border: 0;
+    color: white;
+    font-weight: bold;
+}
 
 /* ELEMENTI NELL' ASIDE */
+.correlated {
+    padding-bottom: 10px;
+}
 
+aside h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+.correlated div {
+    background-color: rgb(242, 241, 241);
+    border: 1px solid #848484;
+    margin-bottom: 18px;
+    padding: 16px;
+}
+aside div p:last-child {
+    margin-bottom: 0;
+    font-size: 0.8em;
+    text-align: right;
+}
 /* FOOTER */
+footer {
+    background-color: #385cab;
+    background: linear-gradient(180deg, rgb(11, 120, 148), rgb(1, 53, 65));
+}
 
-
-/* My stuff 
-    ⇒ ⇐
-	box
-	article
-	main
-	aside
-	article x3?
-	footer
-
-    Colors: 
-    rgb(0,160,198)
-    rgba(3,109,134,1)
-
-*/
+footer p {
+    padding: 5px;
+    font-size: 0.8rem;
+}
+footer span {
+    padding-left:10px;
+    color: magenta;
+}
