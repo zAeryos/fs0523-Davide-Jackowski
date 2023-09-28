@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+/* IMPOSTAZIONI GENERALI */
+body {
+    margin: 25px;
+    background-image: url("../img/sfondo.png");
+    box-sizing: content-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.centered {
+    text-align: center;
+}
+
+.text-white {
+    color:white;
+}
+
+.text-blue {
+    color: blue;
+}
+
+/* HEADER */
+.header {
+    list-style: none;
+    background: linear-gradient(180deg, rgb(0,160,198), rgba(3,109,134,1));
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.header img {
+    width: 280px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.header p {
+    padding-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.header li::before {
+    content: "⇒";
+    padding-right: 5px;
+    font-size: 1.5rem;
+}
+
+.header li::after {
+    content: "⇐";
+    padding-left: 5px;
+    font-size: 1.5rem;
+}
+
+.header li{
+    padding: 5px;
+}
+
+.header a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* ARTICLE */
+.article {
+    background: white;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.16);
+}
+
+.article h1 {
+    padding: 20px;
+}
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
+
+
+/* My stuff 
+    ⇒ ⇐
+	box
+	article
+	main
+	aside
+	article x3?
+	footer
+
+    Colors: 
+    rgb(0,160,198)
+    rgba(3,109,134,1)
+
+*/
