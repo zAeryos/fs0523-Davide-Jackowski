@@ -52,8 +52,8 @@
 
     .section1 {
         background-image: url(../images/banner.jpg);
-        background-size:cover;
-        background-repeat:no-repeat;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
         box-sizing: content-box;
         padding-top: 250px;
         padding-bottom: 250px;
