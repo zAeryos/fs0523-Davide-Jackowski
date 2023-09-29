@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+/* GENERAL STYLES */
+    body {
+       color:#393d41; 
+       font-size: 1.2rem;
+       font-family: 'Open Sans', sans-serif;
+       line-height: 1.65;
+       text-align: center;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: #25a2c3;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+        line-height: 1;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .text-white {
+        color: white;
+    }
+/*HEADER*/
+    header {
+        background-color: black;
+        padding: 35px;
+    }
+/*MAIN*/
+
+    .gpadding {
+        padding: 25px;
+    }
+
+    .section1 {
+        background-image: url(../images/banner.jpg);
+        background-size:cover;
+        box-sizing: content-box;
+    }
+
+    .tbpadding {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .tbmargin {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .headerbutton {
+        color: white;
+        background-color: #f04c2f;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .image-container img{
+        padding: 45px;
+        border-radius: 50%;
+    }
+
+    .section3 {
+        background-color: #e22d0e;
+    }
+
+    .section3 h2 {
+        color:white;
+    }
+
+    .section3 p:first-of-type {
+        margin-bottom: 0;
+    }
+
+    .section3 p:last-of-type {
+        margin-top:0;
+        font-size: 1rem;
+    }
+
+    article {
+        border: 1px solid #dee1e3;
+    }
+    
+    article h3 {
+        padding-top: 15px;
+    }
+
+/*FOOTER*/
+    footer, footer a{
+        color:#c8e7f0;
+        background-color:#25a2c3;
+    }
+
+    footer i {
+        margin-right: 5px;
+        color: white;
+    }
+
+    .contacts h2 {
+        color: white;
+        padding-top: 25px;
+        padding-bottom: 10px;
+    }
+
+    .copyright {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    .copyright p{        
+        border-top: 1px solid #c8e7f0;
+        font-size: 1rem;
+    }
