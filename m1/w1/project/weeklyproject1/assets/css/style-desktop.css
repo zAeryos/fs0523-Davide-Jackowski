@@ -53,7 +53,15 @@
     .section1 {
         background-image: url(../images/banner.jpg);
         background-size:cover;
+        background-repeat:no-repeat;
         box-sizing: content-box;
+        padding-top: 250px;
+        padding-bottom: 250px;
+    }
+
+    .section1:first-of-type p {
+        padding-left: 480px;
+        padding-right: 480px;
     }
 
     .tbpadding {
@@ -76,9 +84,23 @@
         text-decoration: none;
     }
 
-    .image-container img{
+    .section2 {
+        text-align: left;
+        display:inline-block;
+    }
+
+    .section2 img{
         padding: 45px;
         border-radius: 50%;
+    }
+
+    .section2 div{
+        display: inline-block;
+        vertical-align:middle
+    }
+
+    .section2 div p {
+        padding-left: 0;
     }
 
     .section3 {
@@ -106,6 +128,24 @@
         padding-top: 15px;
     }
 
+    .section4 article{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .inline-block {
+        display:inline-block;
+        width: 470px;
+    }
+
+    .section4 p {
+        margin-bottom:50px;
+    }
+
+    .nobmargin {
+        margin-bottom:0;
+    }
+
 /*FOOTER*/
     footer, footer a{
         color:#c8e7f0;
@@ -123,6 +163,7 @@
         margin-top: 15px;
     }
 
+
     .contacts h2 {
         color: white;
         padding-top: 25px;
@@ -133,7 +174,7 @@
         padding-top: 5px;
         padding-bottom: 25px;
     }
-
+    
     .copyright p{        
         font-size: 1rem;
         margin-top: 0;
