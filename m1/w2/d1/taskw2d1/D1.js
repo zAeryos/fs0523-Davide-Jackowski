@@ -81,9 +81,10 @@ REGOLE
  Verifica che name1 sia diversa da name2 (suggerimento: è la stessa cosa di verificare che la loro uguaglianza sia falsa).
  EXTRA: verifica che la loro uguaglianza diventi true se entrambe vengono trasformate in lowercase (senza cambiare il valore di name2!).
 
-  let name1 = "john";
-  let name2 = "John";
+ let name1 = "john";
+ let name2 = "John";
+ 
+ console.log(name1 == name2);
+ console.log(name1.toLowerCase() == name2.toLowerCase());
+ */
 
-  console.log(name1 == name2);
-  console.log(name1.toLowerCase == name2.toLowerCase);
-*/
