@@ -86,16 +86,32 @@ function totalAmountInCartDiscount () {
 
 function orderByValue (num1, num2, num3) {
 
-  if (num1 >= num2 && num2 >= num3) {
+  if (num1 > num2 && num2 > num3) {
+
     console.log(num1, num2, num3);
-  } else if (num2 >= num1 && num) {
+
+  } else if (num1 > num3 && num3 > num2) {
+
+    console.log(num1, num3, num2);
+
+  } else if (num2 > num3 && num3 > num1){
+
+    console.log(num2, num3, num1);
+
+  } else if (num2 > num1 && num1 > num3) {
+
+    console.log(num2, num1, num3);
+
+  } else if (num3 > num1 && num2 > num1) {
+
+    console.log(num3, num2, num1);
+
+  } else {
+
+    console.log(num3, num1, num2);
 
   }
 }
-let number1 = 11;
-let number2 = 36;
-let number3 = 13;
-
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
