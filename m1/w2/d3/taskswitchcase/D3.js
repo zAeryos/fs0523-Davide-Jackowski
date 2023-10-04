@@ -241,3 +241,8 @@ for (let i=0;i < femaleCharacters.length;i++) {
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
 
+function getRandomChar (characters) {
+  return characters[Math.floor((Math.random()*characters.length))]
+}
+
+console.log(getRandomChar(characters));
