@@ -2,7 +2,7 @@ const starWarsCharacters = [
   {
     name: "Luke Skywalker",
     height: 172,
-    mass: 277,
+    mass: 77,
     hair_color: "blond",
     skin_color: "fair",
     eye_color: "blue",
@@ -52,7 +52,7 @@ const starWarsCharacters = [
   {
     name: "Owen Lars",
     height: 178,
-    mass: 120,
+    mass: 29,
     hair_color: "brown, grey",
     skin_color: "light",
     eye_color: "blue",
@@ -82,7 +82,7 @@ const starWarsCharacters = [
   {
     name: "Biggs Darklighter",
     height: 183,
-    mass: 843,
+    mass: 43,
     hair_color: "black",
     skin_color: "light",
     eye_color: "brown",
@@ -200,11 +200,11 @@ console.log(crewMass);
 
 if (crewMass < 500) {
   console.log("Ship is under loaded");
-} else if (crewMass => 500 && crewMass < 700) {
+} else if (crewMass >= 500 && crewMass < 700) {
   console.log("Ship is half loaded");
-} else if (crewMass => 700 && crewMass < 900) {
+} else if (crewMass >= 700 && crewMass < 900) {
   console.log("Warning: Load is over 700");
-} else if (crewMass => 900 && crewMass < 1000) {
+} else if (crewMass >= 900 && crewMass < 1000) {
   console.log("Critical Load: Over 900");
 } else {
   console.log ("DANGER! OVERLOAD ALERT: Escape from the ship now!");
