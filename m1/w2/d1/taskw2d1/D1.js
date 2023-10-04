@@ -64,7 +64,7 @@ REGOLE
  */
  
    name = "Jackowski";
- 
+
    const test = 5;
    //test = 3; Uncaught TypeError: Assignment to constant variable.
    //at D1.js:69:9

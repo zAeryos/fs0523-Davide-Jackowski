@@ -120,7 +120,7 @@ function orderByValue (num1, num2, num3) {
 {
   let randomString = "Definitely not a string";
   
-  console.log(typeof randomString === "number")
+  console.log(typeof randomString === "number");
 }
 
 /* ESERCIZIO 9
