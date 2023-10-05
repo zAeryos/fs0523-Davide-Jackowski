@@ -105,7 +105,7 @@ const starWarsCharacters = [
   Crea una variabile chiamata "characters" e assegnale un array vuoto
 */
 
-let characters = []
+let characters = [];
 
 /* ESERCIZIO 2
   Utilizzando un ciclo for, cicla l'array "starWarsCharacters".
@@ -145,7 +145,7 @@ let eyeColor = {
   "blue-gray": []
 }
 
-console.log(eyeColor)
+console.log(eyeColor);
 
 /* ESERCIZIO 5
   Utilizza uno switch statement per inserire uno ad uno gli oggetti dei personaggi di "starWarsCharacters" negli array relativi al colore degli occhi precedentemente creati.
@@ -180,7 +180,7 @@ let crewMass = 0;
 let i=0;
 
 while(i < starWarsCharacters.length) {
-  crewMass += starWarsCharacters[i].mass
+  crewMass += starWarsCharacters[i].mass;
   i++;
 }
 
