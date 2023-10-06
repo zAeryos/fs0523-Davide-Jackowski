@@ -14,17 +14,21 @@ function area (l1, l2) {
 */
 
 function crazySum (num1, num2) {
-    let sum = 0;
-    if(num1 == num2) {
-        sum = num1 + num2, sum = sum * 3;
+    let sum = num1 + num2;
+    if(num1 === num2) {
+        sum = (num1 + num2) * 3;
         return sum;
-    } else {
-        sum = num1 + num2;
-        return sum;
-    }
+    }   
+    return sum
 }
 
-// you can save deleted stuff with pop by doing let anyName = arrayName.pop();
+/* 
+    function crazySum(n1, n2) {
+        let sum = n1 + n2;
+        return n1 === n2 ? sum * 3 : sum  
+    }   return    if    ? then-^  : else -^
+
+*/
 
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
@@ -49,11 +53,13 @@ function crazyDiff (n=0) {
 function boundary (n) {
     if (n >= 20 && n <= 100 || n == 400) {
         return true;
-    } else {
-        return false;
-    }
+    } 
+    return false;
 }
-// or return del controllo
+
+// const boundary= () => { }
+
+// let boundary = n =>(n >= 20 && n <= 100) || n === 400; 
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
@@ -76,7 +82,7 @@ function epify (string) {
 */
 
 function check3and7 (n) {
-    if (n % 3 == 0 || n % 7 == 0) {
+    if (n % 3 >= 0 || n % 7 >= 0) {
         return true;
     } else {
         return false;
@@ -126,3 +132,6 @@ function giveMeRandom(n) {
     }
     return randomNumbers;
 }
+
+
+// you can save deleted stuff with pop by doing let anyName = arrayName.pop();
