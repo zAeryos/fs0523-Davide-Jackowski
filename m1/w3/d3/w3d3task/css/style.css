@@ -13,7 +13,7 @@
       width: 60%;
       margin-left: 20%;
       margin-right: 20%;
-
+      height: 100vh;
    }
 
    h1, h2, h3, h4, h5, h6 {
@@ -62,4 +62,16 @@
    li {
       padding: 20px;
       list-style: none;
+   }
+
+   li button {
+      margin-left: 15px;
+   }
+
+   li:nth-child(2n + 1) {
+      background-color: rgb(154, 144, 144);
+   }
+
+   li:nth-child(3n + 2) {
+      background-color: rgb(209, 209, 209);
    }

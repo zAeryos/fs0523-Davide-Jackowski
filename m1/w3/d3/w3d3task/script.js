@@ -1,17 +1,31 @@
-    const taskText = document.getElementById("userInput");
+    const userInput = document.getElementById("userInput");
     const buttonAdd = document.getElementById("buttonSend");
     const form = document.getElementById("taskForm")
 
     buttonAdd.addEventListener("click", function(e) {
         e.preventDefault();
-
         const ol = document.getElementById("taskList")
-        const li = document.createElement("li");
-        if(taskText.value !== '') {
-            li.innerText = taskText.value;
-            ol.append(li);
-            taskText.value = '';
+        
+        if(!userInput.value) {
+            return;
         }
+        
+        const li = document.createElement("li");
+        li.innerText = userInput.value;
+        ol.append(li);
+        userInput.value = '';
+
+        const buttonDelete = document.createElement("button");
+        buttonDelete.innerText = "Delete";
+        li.append(buttonDelete);
+
+        li.addEventListener("click", function() {
+            li.style.textDecoration = "line-through";
+        })
+
+        buttonDelete.addEventListener("click", function() {
+            li.remove();
+        })
     })
 
     
