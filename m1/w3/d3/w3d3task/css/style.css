@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+/* GENERAL */
+
+   body {
+    color:#393d41; 
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.65;
+    font-weight: 1.2em;
+   }
+
+   #taskPageContainer {
+      background-color: #b6b5b5;
+      width: 60%;
+      margin-left: 20%;
+      margin-right: 20%;
+
+   }
+
+   h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+   }
+
+   h1 {
+    padding: 30px;
+    font-size: 2.3rem;
+    background-color: rgb(38, 116, 149);
+    color: rgb(213, 212, 212);
+    text-align: center;
+   }
+
+   h2 {
+    padding: 20px;
+    font-size: 1.4rem;
+   }
+
+   .centered {
+    text-align: center;
+   }
+
+   main {
+    background-color: #858484;
+   }
+ 
+   #userInput {
+    width: 16rem;
+    height: 2rem;
+    margin-bottom:40px;
+   }
+
+   #buttonSend {
+   background-color: #7ec0df;
+   width: 4rem;
+   height: 2.4rem;
+   }
+
+   #buttonSend:hover {
+   background-color: #5299ba;
+   }
+
+   li {
+      padding: 20px;
+      list-style: none;
+   }
