@@ -227,7 +227,8 @@ function deleteOne (string, boolean) {
 */
 
 function onlyLetters(string) {
-
+  let noNum = string.replace(/\d+./g, '')
+  return noNum;
 }
 
 /* ESERCIZIO 6
@@ -272,7 +273,7 @@ function rollTheDices(n) {
   let sum = 0;
   let values = [];
   
-  for (let i=0; i < n; n++) {
+  for (let i=0; i < n; i++) {
     let roll = dice();
     sum += roll;
     values.push(roll);
@@ -280,7 +281,6 @@ function rollTheDices(n) {
 
   return {sum, values};
 }
-// NOT COMPLETED  
 
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
@@ -289,8 +289,10 @@ function rollTheDices(n) {
 function howManyDays (date) {
   const todaysDate = new Date();
   let chosenDate = new Date(date);
+
   let dateDifference = todaysDate.getTime() - chosenDate.getTime();
   let daysPassed = Math.floor(dateDifference / (1000 * 60 * 60 * 24));
+
   return daysPassed;
 }
 
@@ -332,6 +334,7 @@ function deleteProp (obj, string) {
 
 function newestMovie (arr) {
   let newestMovie = arr[0];
+
   for (let i=1; i < arr.length; i++) {
     if (arr[i].Year > newestMovie.Year) {
       newestMovie = arr[i];
@@ -383,26 +386,41 @@ function sumAllTheYears (arr) {
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
 
-function searchByTitle (string, arr) {
- for (movie of arr) {
-  if (movie.Title == movie.Title) {
-    return movie;
-  }
+function searchByTitle (title) {
+  let matchingMovies = [];
+  movies.forEach (movie => {
+    if (movie.Title.toLowerCase().includes(title.toLowerCase())) {
+      matchingMovies.push(movie)
+    }
+  });
+  return matchingMovies;
  }
-}
-// NOT COMPLETED
+
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
 */
 
+function searchAndDivide (title) {
+  let matchingMovies = searchByTitle(title);
+  let notMatchingMovies = movies.filter(x => !matchingMovies.includes(x));
 
+  return {matchingMovies, notMatchingMovies};
+}
 
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
-*/
+  
+  Write a function called "removeIndex" that takes a number as a parameter and returns the provided "movies"
+  array without the element at the position received as a parameter.
+  */
 
+function removeIndex (index) {
+  const newMovieArray = movies;
+  newMovieArray.splice(index -1 , 1); //Ho messo -1 per renderlo più user friendly in quanto non sanno gli index iniziano da 0.
 
+  return newMovieArray;
+}
 
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
