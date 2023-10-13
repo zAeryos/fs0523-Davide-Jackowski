@@ -331,10 +331,10 @@ function deleteProp (obj, string) {
 */
 
 function newestMovie (arr) {
-  let newestMovie = movies[0];
-  for (let i=1; i < movies.length; i++) {
-    if (movies[i].Year > newestMovie.Year) {
-      newestMovie = movies[i];
+  let newestMovie = arr[0];
+  for (let i=1; i < arr.length; i++) {
+    if (arr[i].Year > newestMovie.Year) {
+      newestMovie = arr[i];
     }
   }
 
@@ -383,8 +383,14 @@ function sumAllTheYears (arr) {
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
 
-
-
+function searchByTitle (string, arr) {
+ for (movie of arr) {
+  if (movie.Title == movie.Title) {
+    return movie;
+  }
+ }
+}
+// NOT COMPLETED
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
