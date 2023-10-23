@@ -201,6 +201,10 @@ footer a {
         font-size: 4.8rem;
     }
 
+    article h2 {
+        font-weight: bold;
+    }
+
     table {
         margin: 4.5em auto;
     }
@@ -212,14 +216,27 @@ footer a {
 
 @media screen and (min-width: 1200px) {
 
-    header {
+    .header-stuff {
         height: 8em;
     }
 
-    header div, header nav {
+    header div { 
+        width: 59%;
+        display:inline-block;
+    }
+    header img, header p {
+        margin: 0;
+    }
+
+    header nav {
+        text-align: right;
+        width: 30%;
+    }
+
+    header img, header p, header nav{
         display: inline-block;
-        width: calc(100% / 3 - 0.4em);
-    } 
+        vertical-align: middle;
+    }
 
     header, main, footer {
         width: 90%;
