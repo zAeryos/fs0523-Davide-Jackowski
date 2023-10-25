@@ -38,6 +38,18 @@ header {
   header {
     padding: 1em;
   }
+
+  .fixed-buttons:nth-child(1) {
+    position: fixed;
+    top: 30px;
+    right:0;
+  }
+  .fixed-buttons:nth-child(2) {
+    position: fixed;
+    top: 30px;
+    right:0;
+  }
+
 }
 
 @media screen and (max-width: 1199px) {
@@ -130,8 +142,10 @@ section h2 {
 }
 
 .fixed-buttons {
-  position: absolute;
+  position: fixed;
   right:0;
+  bottom: 30px;
+
 }
 
 .fixed-buttons div {
@@ -146,15 +160,23 @@ section h2 {
 }
 
 .fixed-buttons i {
-  color: rgb(50, 82, 151);
+  color: rgb(66, 109, 201);
   position:relative;
   bottom: -6px;
 }
 
-.fixed-buttons .back-to-top-button i {
+.fixed-buttons .back-to-index i {
   color: rgb(255, 89, 0);
   position:relative;
   bottom: -6px;
+}
+
+.fixed-buttons div:hover {
+  position: relative;
+  background-color: white;
+  width: 60px;
+  right: 0px;
+  transition: all 0.3s;
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */

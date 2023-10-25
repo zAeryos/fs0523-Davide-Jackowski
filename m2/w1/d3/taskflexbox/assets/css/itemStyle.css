@@ -1,0 +1,74 @@
+#product-card {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    background-color: #FBF7E3;
+    margin: 25px;
+    border-radius: 70px;
+    color:#612406;
+} 
+
+#product-card .col {
+    padding: 15px;
+    padding-left:15px;
+}
+
+#product-card .col1 {
+    flex-basis: 50%;
+}
+
+#product-card .col2 {
+    flex-basis: 30%;
+}
+
+#product-card .col b {
+    font: revert;
+}
+
+#product-card .col-img img {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+#product-card .col4 button {
+    text-decoration: none;
+    color:#612406;
+    background-color: #F3DF85;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#product-card .col4 button:hover {
+    background-color: #cbba6f;
+}
+
+#product-card .col4 {
+    padding: 1em;
+    margin-left: 50px;
+}
+
+#product-card .product-name {
+    font-size: 1.2em;
+}
+
+#product-card .origin {
+    padding-left:5px;
+}
+
+/* 
+    colors:
+
+    background color general:   background-color: #FBF7E3;
+    background button:          background-color: #F3DF85;
+    background button:hover     background-color: #cbba6f;
+    text color:                 color: #612406;
+
+    Mobile: fino a 576
+    Tablet: 576 a 768
+    Medium: 768 a 1200
+    Medium-large: 1200 o 1280 a 1440
+    Extra-large: 1440 in su
+    
+*/

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+#navbar {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #FBF7E3;
+    
+}
+
+#navbar .subNav {
+    display: flex;
+    border-radius: 40px;
+    flex-basis: 15%;   
+    height: 50px;
+    font-size: 0.8em;
+}
+
+#navbar .mainNav {
+    display: flex;
+    border-radius: 40px;
+    flex-basis: 26%;
+    height: 80px;
+}
+
+#navbar .bee-icon {
+    background: url(../imgs/logo.png);
+}
+
+#navbar .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #F3DF85;
+}
+
+#navbar .col:hover {
+    background-color: #cbba6f;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #612406;
+}
+
+#navbar b {
+    font: revert;
+    font-family: 'Roboto', sans-serif;
+}
+
+#navbar .main-text {
+    font-size: 1.4em;
+    padding-left: 25px;
+}
+
+/* 
+    colors:
+
+    background color general:   background-color: #FBF7E3;
+    background button:          background-color: #F3DF85;
+    background button:hover     background-color: #cbba6f;
+    text color:                 color: #612406;
+
+    Mobile: fino a 576
+    Tablet: 576 a 768
+    Medium: 768 a 1200
+    Medium-large: 1200 o 1280 a 1440
+    Extra-large: 1440 in su
+    
+*/
