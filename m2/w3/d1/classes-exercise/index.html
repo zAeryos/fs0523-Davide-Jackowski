@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pet-form-container">
+        <h2>Create your pet profile!</h2>
+        <form id="petForm">
+            <label for="petName">Pet name:</label>
+            <input type="text" id="petName" placeholder="Pet name.." required><br>
+        
+            <label for="ownerName">Owner name:</label>
+            <input type="text" id="ownerName" placeholder="Owner name.." required><br>
+        
+            <label for="species">Species:</label>
+            <input type="text" id="species" placeholder="Species.." required><br>
+        
+            <label for="breed">Breed:</label>
+            <input type="text" id="breed" placeholder="Breed.." required><br>
+        
+            <input type="submit" value="Create pet">
+        </form>
+    </div>
+
+    <div class="created-pets-container">
+        <h2>Your created pets!</h2>
+        <ul id="petsList"></ul>
+    </div>
+
+    <script>
+        class User{
+            constructor(fn, ln, a, loc) {
+                this.firstName = fn;
+                this.lastName = ln;
+                this.age = a;
+                this.location = loc;
+            }
+
+            static compareAge(user1, user2) {
+                if (user1.age > user2.age) {
+                    return `${user1.firstName} is older than ${user2.firstName}.`;
+                } else if (user1.age < user2.age) {
+                    return `${user2.firstName} is older than ${user1.firstName}.`;
+                } else if (user1.age == user2.age) {
+                    console.log("Both users have the same age!")
+                }
+            }
+        }
+
+        firstUser = new User('Sara','Proietti',23,'Rome');
+        console.log(firstUser);
+
+        secondUser = new User('Federik','Ursberg',28,'London');
+        console.log(secondUser);
+
+        User.compareAge(firstUser, secondUser);
+
+        class Pet{
+            constructor(pn, on, s, b) {
+                this.petName = pn;
+                this.ownerName = on;
+                this.species = s;
+                this.breed = b;
+            }
+        }
+
+        let petForm = document.getElementById("petForm");
+        petForm.addEventListener('submit', function(e) {
+
+            e.preventDefault();
+            let petName = document.getElementById("petName").value;
+            let ownerName = document.getElementById("ownerName").value;
+            let species = document.getElementById("species").value;
+            let breed = document.getElementById("breed").value;
+
+            const pet = new Pet(petName, ownerName, species, breed);
+
+            addPet(pet);
+
+        })
+
+        function addPet(pet) {
+
+            const petList = document.getElementById("petsList");
+            const li = document.createElement("li");
+            li.innerHTML = `Pet name: ${pet.petName}, 
+                            Owner name: ${pet.ownerName}, 
+                            Species: ${pet.species}, 
+                            Breed: ${pet.breed}`;
+                            
+            petList.append(li);
+            
+        }
+
+    </script>
+</body>
+</html>
