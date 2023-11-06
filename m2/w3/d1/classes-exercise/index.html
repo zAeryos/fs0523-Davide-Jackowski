@@ -65,6 +65,14 @@
                 this.species = s;
                 this.breed = b;
             }
+
+            sameOwner(pet1, pet2) {
+                if (pet1.ownerName == pet2.ownerName) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
         }
 
         let petForm = document.getElementById("petForm");
@@ -92,7 +100,7 @@
                             Breed: ${pet.breed}`;
                             
             petList.append(li);
-            
+
         }
 
     </script>
