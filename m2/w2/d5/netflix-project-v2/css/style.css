@@ -1,0 +1,102 @@
+/* GENERAL STUFF */
+
+body {
+  background: #141414;
+}
+
+.text-gray {
+    color: #a1a1a1;
+}
+
+.text-size-md {
+    font-size: 1.4em;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+/* MAIN PAGE */
+
+    /* HEADER */
+
+    .navbar {
+        background-color: #141414;
+    }
+
+    #logo-img {
+        height: 48px;
+    }
+    
+    .avatar-nav {
+        height: 36px;
+    }
+    
+    .avatar-dd {
+        height: 2.5em;
+        margin-right: 10px;
+    }
+    
+    /* MOVIE SECTIONS */
+
+    .dropdown-menu {
+    margin-left: -120px;
+    background-color: rgb(18, 18, 18);
+    }
+
+    .dropdown-menu a {
+    font-size: 0.8em;
+    }
+
+    .genre-details {
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .movie {
+    opacity: 0.7;
+    }
+
+    .movie:hover {
+    position: relative;
+    opacity: 1;
+    transition: 0.5s;
+    transform: scale(1.1);
+    z-index: 1;
+    cursor: pointer;
+    }
+
+    /* FOOTER */
+
+    .footer-container li {
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    .footer-section .text-secondary:hover {
+        color: white !important;  /* Lo sto mettendo l'important perche' altrimenti non riesco a fare l'override di bootstrap senza importarlo */
+    }
+    
+/* PROFILE PAGE */
+
+.profile-page .action-buttons button {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.profile-title {
+  font-size: 4em;
+}
+
+.user-input {
+  padding: 0.8em;
+  width: 100%;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.checkbox-input {
+  width: 2em;
+  height: 2em;
+}
+
