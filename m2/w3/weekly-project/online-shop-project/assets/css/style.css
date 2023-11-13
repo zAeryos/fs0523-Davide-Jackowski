@@ -1,0 +1,27 @@
+.custom-bg-light {
+    background-color: #a8aab4;
+}
+
+.bg-blue-light {
+    background-color: #604f72;
+}
+
+.bg-yellow {
+    background-color: #5c5c11;
+}
+
+.p-font {
+    font-size: 1.4em;
+}
+
+.max-size {
+    width: 100%;
+    height: 250px;
+}
+
+.col-md-4 {
+    width: calc(100% / 3 - 20px);
+    margin-left:10px;
+    margin-right:10px;
+}
+

@@ -5,7 +5,9 @@ let deleteButtons = document.querySelectorAll("#delete-movie");
 
 fetch("https://striveschool-api.herokuapp.com/books")
 .then(res => res.json())
-.then(book => {
+.then(books => {
+
+    books
     book.forEach( {
         
     })
