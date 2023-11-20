@@ -1,4 +1,4 @@
-function guessingGame(p1Number:number, p2Number:number) {
+function guessingGame(p1Number:number, p2Number:number):string {
     
     let randomNum:number = Math.floor(Math.random() * (100 - 1) + 1);
     let restP1Number:number = Math.abs(p1Number - randomNum);
@@ -21,4 +21,5 @@ function guessingGame(p1Number:number, p2Number:number) {
     } else if (restP1Number % randomNum == restP2Number % randomNum) {
         return 'No one guessed the number, it was ' + randomNum + ', but both players were equally as close to guessing it!';
     }
+    return 'One of the parameters is not a number';
 }

@@ -25,4 +25,5 @@ function guessingGame(p1Number, p2Number) {
     else if (restP1Number % randomNum == restP2Number % randomNum) {
         return 'No one guessed the number, it was ' + randomNum + ', but both players were equally as close to guessing it!';
     }
+    return 'One of the parameters is not a number';
 }
