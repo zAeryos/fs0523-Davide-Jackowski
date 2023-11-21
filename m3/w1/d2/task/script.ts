@@ -7,12 +7,12 @@ class SonAccount {
         console.log('Account has been created.');
     }
 
-    public oneDeposit (amount: number): void {
+    public depositMoney (amount: number): void {
         this.balanceInit += amount;
         console.log('Money deposited successfully, your new balance is: ' + this.balanceInit + '$.')
     }
 
-    public oneWithdraw (amount: number): void {
+    public withdrawMoney (amount: number): void {
         if (this.balanceInit >= amount) {
             this.balanceInit -= amount;
             console.log('Money withdrawn successfully, your new balance is ' + this.balanceInit + '$.')

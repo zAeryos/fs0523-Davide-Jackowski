@@ -4,11 +4,11 @@ class SonAccount {
         this.balanceInit = _balanceInit;
         console.log('Account has been created.');
     }
-    oneDeposit(amount) {
+    depositMoney(amount) {
         this.balanceInit += amount;
         console.log('Money deposited successfully, your new balance is: ' + this.balanceInit + '$.');
     }
-    oneWithdraw(amount) {
+    withdrawMoney(amount) {
         if (this.balanceInit >= amount) {
             this.balanceInit -= amount;
             console.log('Money withdrawn successfully, your new balance is ' + this.balanceInit + '$.');
