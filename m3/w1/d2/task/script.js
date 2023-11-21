@@ -25,16 +25,16 @@ class SonAccount {
 class MotherAccount extends SonAccount {
     addInterest() {
         const interest = this.getBalance() * 0.10;
-        this.oneDeposit(interest);
+        this.depositMoney(interest);
     }
 }
 const sonAccount = new SonAccount(1500);
 console.log(sonAccount.getBalance());
-sonAccount.oneDeposit(300);
-sonAccount.oneWithdraw(300);
-sonAccount.oneWithdraw(2000);
+sonAccount.depositMoney(300);
+sonAccount.withdrawMoney(300);
+sonAccount.withdrawMoney(2000);
 const motherAccount = new MotherAccount(5000);
 console.log(motherAccount.getBalance());
-motherAccount.oneDeposit(6000);
-motherAccount.oneWithdraw(1500);
+motherAccount.depositMoney(6000);
+motherAccount.withdrawMoney(1500);
 motherAccount.addInterest();
