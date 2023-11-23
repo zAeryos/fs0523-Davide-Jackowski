@@ -29,12 +29,14 @@ class MotherAccount extends SonAccount {
     }
 }
 const sonAccount = new SonAccount(1500);
-console.log(sonAccount.getBalance());
+console.log('Currently, you have ' + sonAccount.getBalance() + '$ in your bank account.');
 sonAccount.depositMoney(300);
 sonAccount.withdrawMoney(300);
 sonAccount.withdrawMoney(2000);
 const motherAccount = new MotherAccount(5000);
-console.log(motherAccount.getBalance());
+console.log('Currently, you have ' + motherAccount.getBalance() + '$ in your bank account.');
 motherAccount.depositMoney(6000);
 motherAccount.withdrawMoney(1500);
+motherAccount.withdrawMoney(25000);
 motherAccount.addInterest();
+console.log('The two accounts together have ' + (sonAccount.getBalance() + motherAccount.getBalance()) + '$.');
