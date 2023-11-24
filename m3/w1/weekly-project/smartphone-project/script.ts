@@ -53,11 +53,13 @@ class Smartphone implements ISim {
         this.numeroChiamate = 0;
     }
 
-    mostraRegistroChiamate(): void {
+    mostraRegistroChiamate(): object {
         console.log('Registro chiamate:');
         this.registroChiamate.forEach((chiamata) => {
             console.log(chiamata);
+            return chiamata;
         });
+        return this.registroChiamate;
     }
 
     filtraChiamate(dataOra: Date): object {

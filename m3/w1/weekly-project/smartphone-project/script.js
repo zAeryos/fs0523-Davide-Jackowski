@@ -38,7 +38,9 @@ class Smartphone {
         console.log('Registro chiamate:');
         this.registroChiamate.forEach((chiamata) => {
             console.log(chiamata);
+            return chiamata;
         });
+        return this.registroChiamate;
     }
     filtraChiamate(dataOra) {
         const chiamateFiltrate = this.registroChiamate.filter((chiamata) => {
