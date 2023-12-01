@@ -16,9 +16,10 @@
     <td>Task</td>
     <td>Status</td>
   </tr>
-  <tr *ngFor="let t of todos">
+  <tr *ngFor="let t of todos" (click)="deleteTodo(t.id)">
     <td>{{t.title}}</td>
     <td *ngIf="t.completed == true">Done!</td>
     <td *ngIf="t.completed == false">Not done!</td>
   </tr>
 </table>
+

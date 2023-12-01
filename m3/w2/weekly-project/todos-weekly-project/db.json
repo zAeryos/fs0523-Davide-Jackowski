@@ -6,34 +6,19 @@
       "id": 1
     },
     {
-      "completed": false,
-      "title": "ciaooo",
-      "id": 2
+      "completed": true,
+      "title": "last minute test",
+      "id": 3
     },
     {
-      "completed": true,
-      "title": "dsada",
+      "completed": false,
+      "title": "understood angular",
       "id": 4
     },
     {
-      "completed": false,
-      "title": "dsadsa",
+      "completed": true,
+      "title": "doubted my skills",
       "id": 5
-    },
-    {
-      "completed": false,
-      "title": "dasdsadsa",
-      "id": 6
-    },
-    {
-      "completed": true,
-      "title": "dsaasda",
-      "id": 7
-    },
-    {
-      "completed": true,
-      "title": "dsaasdadsadwafa",
-      "id": 8
     }
   ]
 }

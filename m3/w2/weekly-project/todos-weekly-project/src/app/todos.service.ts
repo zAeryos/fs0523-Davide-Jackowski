@@ -37,13 +37,4 @@ export class TodosService {
       body:JSON.stringify(todo)
     }).then(res => res.json())
   }
-
-  deleteTodo(id:string):Promise<Todo>{
-    return fetch(this.baseUrl + `/${id}`,{
-      method:'DELETE',
-      headers:{
-        'Content-Type':'application/json'
-      }
-    }).then(res => res.json())
-  }
 }

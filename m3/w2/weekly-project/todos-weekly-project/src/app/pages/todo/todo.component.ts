@@ -9,6 +9,7 @@ import { Todo } from '../../models/todo';
 })
 export class TodoComponent {
 
+  baseUrl:string = 'http://localhost:3000/todos';
   todos:Todo[] = []
 
   constructor(private todosSvc:TodosService){}
@@ -30,4 +31,14 @@ export class TodoComponent {
       this.loading = false;
     })
   }
+
+  deleteTodo(id:string|number):Promise<Todo>{
+    return fetch(this.baseUrl + `/${id}`,{
+      method:'DELETE',
+      headers:{
+        'Content-Type':'application/json'
+      }
+    }).then(res => res.json())
+  }
+
 }
