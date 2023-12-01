@@ -1,0 +1,24 @@
+<form>
+   <input type="text" placeholder="What do you need to do?" [(ngModel)]="newTodo.title" name="title">
+   <select name="active" [(ngModel)]="newTodo.completed">
+      <option value="1">Completed</option>
+      <option value="0">Not Completed</option>
+   </select>
+   <button (click)="saveTodo()">+</button>
+</form>
+
+<div *ngIf="loading"><h3>Creating your To-Do right now!</h3></div>
+
+<h2>List of your To-Dos!</h2>
+<div *ngIf="!todos.length"><h3>Loading your To-Dos right now..</h3></div>
+<table>
+  <tr>
+    <td>Task</td>
+    <td>Status</td>
+  </tr>
+  <tr *ngFor="let t of todos">
+    <td>{{t.title}}</td>
+    <td *ngIf="t.completed == true">Done!</td>
+    <td *ngIf="t.completed == false">Not done!</td>
+  </tr>
+</table>
