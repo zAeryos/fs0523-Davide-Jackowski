@@ -9,36 +9,44 @@ import { Todo } from '../../models/todo';
 })
 export class TodoComponent {
 
-  baseUrl:string = 'http://localhost:3000/todos';
-  todos:Todo[] = []
+  baseUrl:        string    = 'http://localhost:3000/todos';
+  todos:          Todo[]    = []
+  loadingScreen:  boolean   = false
+  loading:        boolean   = false;
 
   constructor(private todosSvc:TodosService){}
 
   ngOnInit(){
-    this.todosSvc.getAllTodos().then(todo => this.todos = todo)
+    this.loadingScreen    = true;
+    this.todosSvc.getUncompletedTodos().then(todo => {
+      this.todos          = todo
+      this.loadingScreen  = false
+    })
   }
 
   newTodo:Partial<Todo> = {
     completed: '0'
   };
 
-  loading:boolean = false;
-
   saveTodo(){
     this.loading = true;
     this.newTodo.completed = Boolean(Number(this.newTodo.completed));
-    this.todosSvc.createTodo(this.newTodo).then(red => {
+    this.todosSvc.createTodo(this.newTodo).then(res => {
+      this.todos.push(res);
       this.loading = false;
     })
   }
 
-  deleteTodo(id:string|number):Promise<Todo>{
-    return fetch(this.baseUrl + `/${id}`,{
-      method:'DELETE',
-      headers:{
-        'Content-Type':'application/json'
-      }
-    }).then(res => res.json())
+  delete(id:number) {
+    if (!id) return;
+
+    this.todosSvc.deleteTodo(id).then((res) => {
+      this.todos = this.todos.filter(todos => todos.id != id)
+    })
+  }
+
+  switchCompleteStatus(id: string | number){
+    return this.todosSvc.toggleTodoCompleted(id);
   }
 
 }

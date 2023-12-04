@@ -1,1 +1,23 @@
-<p>completed works!</p>
+<div *ngIf="loadingScreen" class="pageLoading">
+  <p class="loading">Loading your completed tasks, please wait..</p>
+</div>
+
+<div *ngIf="!loadingScreen" class="pageLoaded">
+  <div class="formContainer">
+    <div *ngIf="!todos.length" class="noTasks"><h3>Oops, it seems you have not completed any tasks yet.</h3></div>
+  </div>
+
+  <div *ngIf="todos.length" class="taskList">
+    <h2>List of your completed To-Dos!</h2>
+    <table>
+      <tr *ngFor="let t of todos">
+        <td class="taskRow">
+          <div class="titleSvgContainer">
+            <p class="taskTitle" (click)="switchCompleteStatus(t.id)">{{t.title}}</p>
+            <button (click)="delete(t.id)" class="taskInteract">Delete</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

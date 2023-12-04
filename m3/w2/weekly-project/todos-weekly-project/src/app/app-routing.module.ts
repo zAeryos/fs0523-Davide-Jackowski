@@ -6,6 +6,11 @@ import { CompletedComponent } from './pages/completed/completed.component';
 const routes: Routes = [
   {
     path: '',
+    redirectTo: '/todos',
+    pathMatch: 'full'
+  },
+  {
+    path: 'todos',
     component: TodoComponent
   },
   {

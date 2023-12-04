@@ -1,25 +1,35 @@
-<form>
-   <input type="text" placeholder="What do you need to do?" [(ngModel)]="newTodo.title" name="title">
-   <select name="active" [(ngModel)]="newTodo.completed">
-      <option value="1">Completed</option>
-      <option value="0">Not Completed</option>
-   </select>
-   <button (click)="saveTodo()">+</button>
-</form>
+<div *ngIf="loadingScreen" class="pageLoading">
+  <p class="loading">Loading your tasks, please wait..</p>
+</div>
 
-<div *ngIf="loading"><h3>Creating your To-Do right now!</h3></div>
+<div *ngIf="!loadingScreen" class="pageLoaded">
+  <div class="formContainer">
+    <form class="addTask">
+      <input type="text" placeholder="What do you need to do?" [(ngModel)]="newTodo.title" name="title">
+      <select name="active" [(ngModel)]="newTodo.completed">
+         <option value="1">Completed</option>
+         <option value="0">Not Completed</option>
+      </select>
+      <button (click)="saveTodo()">+</button>
+      <div *ngIf="loading"><h3>Creating your To-Do right now!</h3></div>
+    </form>
+    <div *ngIf="!todos.length" class="noTasks"><h3>Oops, it seems you have no tasks.</h3></div>
+  </div>
 
-<h2>List of your To-Dos!</h2>
-<div *ngIf="!todos.length"><h3>Loading your To-Dos right now..</h3></div>
-<table>
-  <tr>
-    <td>Task</td>
-    <td>Status</td>
-  </tr>
-  <tr *ngFor="let t of todos" (click)="deleteTodo(t.id)">
-    <td>{{t.title}}</td>
-    <td *ngIf="t.completed == true">Done!</td>
-    <td *ngIf="t.completed == false">Not done!</td>
-  </tr>
-</table>
+  <div *ngIf="todos.length" class="taskList">
+    <h2>List of your To-Dos!</h2>
+    <table>
+      <tr *ngFor="let t of todos">
+        <td class="taskRow">
+          <div class="titleSvgContainer">
+            <p class="taskTitle" (click)="switchCompleteStatus(t.id)">{{t.title}}</p>
+            <svg xmlns="http://www.w3.org/2000/svg" (click)="switchCompleteStatus(t.id)" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#7ad1ac" d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zM227.3 387.3l184-184c6.2-6.2 6.2-16.4 0-22.6l-22.6-22.6c-6.2-6.2-16.4-6.2-22.6 0L216 308.1l-70.1-70.1c-6.2-6.2-16.4-6.2-22.6 0l-22.6 22.6c-6.2 6.2-6.2 16.4 0 22.6l104 104c6.2 6.2 16.4 6.2 22.6 0z"/></svg>
+            <button (click)="delete(t.id)" class="taskInteract">Delete</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
 

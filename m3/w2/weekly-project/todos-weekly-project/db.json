@@ -1,24 +1,29 @@
 {
   "todos": [
     {
-      "completed": "1",
+      "completed": true,
       "title": "Drive myself insane",
       "id": 1
     },
     {
       "completed": true,
-      "title": "last minute test",
-      "id": 3
-    },
-    {
-      "completed": false,
-      "title": "understood angular",
-      "id": 4
+      "title": "understood angular a bit",
+      "id": 9
     },
     {
       "completed": true,
-      "title": "doubted my skills",
-      "id": 5
+      "title": "tried a billion things to learn",
+      "id": 10
+    },
+    {
+      "completed": false,
+      "title": "definitely understood angular",
+      "id": 11
+    },
+    {
+      "completed": false,
+      "title": "slept very peacefully",
+      "id": 13
     }
   ]
 }
