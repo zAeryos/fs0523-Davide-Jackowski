@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "email": "ciaone@ciao.it",
+      "password": "$2a$10$FuZ7aP0b0Gf1OOGa3FAfDOb3dX2C63zE0mN07RYhYavM9oGBBDo36",
+      "name": "ciao",
+      "id": 2
+    },
+    {
+      "email": "ciaone@ciao.com",
+      "password": "$2a$10$WFQHdniwsA0O1FH44ggyCuzDs.nsYHtc/T.kgX1ypqHUm.RWBKjja",
+      "name": "ciao",
+      "id": 3
+    },
+    {
+      "email": "test@test.it",
+      "password": "$2a$10$H1WtsxnhJpHfnydZ17Mmb.CfsDinRhCD4feSTSUsOgRpNtqNnHSNG",
+      "name": "test",
+      "id": 4
+    },
+    {
+      "email": "aaa@aaaa.it",
+      "password": "$2a$10$JYUDVDBBXnUi8EJZeUtWPuU9BVEyOjHTwPh2zO6vlDu6c1urJOlz6",
+      "name": "aaa",
+      "id": 5
+    },
+    {
+      "email": "ciaone@ciao.co",
+      "password": "$2a$10$Oc6iF4msD3AQhtB7Ja6EtuHj.f9xdcwu7ls2DE4xEhVTHncrsogES",
+      "name": "ciao",
+      "id": 6
+    },
+    {
+      "email": "ciaoo@ciao.it",
+      "password": "$2a$10$fFJp/bWt/r19uAYCA4uHA.4COlJZAVkN.tVmkejH/Erqur73mo.My",
+      "name": "ciao",
+      "id": 7
+    },
+    {
+      "email": "test2@test.it",
+      "password": "$2a$10$By2/InIYLO9LIy33Q5r6WO5xC5ywFmW7x5FAPIyHn2lr/xYURI01O",
+      "name": "test2",
+      "id": 8
+    },
+    {
+      "email": "a@aa.it",
+      "password": "$2a$10$mO7xIOm34TCDGB1.kHVfNO./McQepb/vV/qijpw5X6uAu4TGzoXj.",
+      "name": "a",
+      "id": 9
+    }
+  ],
+  "cities": []
+}

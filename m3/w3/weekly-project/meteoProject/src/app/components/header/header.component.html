@@ -1,0 +1,13 @@
+<header>
+  <nav class="navbar bg-body-tertiary" data-bs-theme = "dark">
+    <div class="container-fluid">
+      <a routerLink = "" class = "navbar-brand">VSC Weather</a>
+      <div class="d-flex">
+        <a *ngIf = "!(isLoggedIn$ | async)" routerLink = "/auth/register" class = "btn btn-primary me-3">Sign up</a>
+        <a *ngIf = "!(isLoggedIn$ | async)" routerLink = "/auth/login"    class = "btn btn-success me-3">Sign in</a>
+
+        <a *ngIf = "isLoggedIn$ | async" (click)="logout()"               class = "btn btn-danger me-3">Logout</a>
+      </div>
+    </div>
+  </nav>
+</header>

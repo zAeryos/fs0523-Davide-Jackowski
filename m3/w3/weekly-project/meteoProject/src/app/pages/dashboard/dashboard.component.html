@@ -1,0 +1,24 @@
+<div class="container mt-5">
+  <div class="row">
+    <h2 class="text-center mb-5">Here's the most checked cities lately! (Not really)</h2>
+    <div *ngFor="let cityWeather of weatherData" class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img [src]="getWeatherImage(cityWeather.data.list[0].weather[0].main)" class = "card-img-top" alt = "weatherIcon">
+        <div class="card-body">
+          <h5 class="card-title text-center">{{cityWeather.city}}</h5>
+          <p class="card-text text-center">Current temperature: {{kelvinToCelsius(cityWeather.data.list[0].main.temp)}}°</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Min-temp: {{kelvinToCelsius(cityWeather.data.list[0].main.temp_min)}}°C</li>
+          <li class="list-group-item">Max-temp: {{kelvinToCelsius(cityWeather.data.list[0].main.temp_max)}}°C</li>
+          <li class="list-group-item">Wind-mph: {{cityWeather.data.list[0].wind.speed}} mph</li>
+          <li class="list-group-item">Humidity: {{cityWeather.data.list[0].main.humidity}}%</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div><h2 class="text-center mt-5">Want to search for a city?</h2></div>
+<div class="container">
+
+</div>

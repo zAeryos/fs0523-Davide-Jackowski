@@ -18,7 +18,7 @@ export class SignupComponent {
       username:     this.fb.control(null, [Validators.required]),
       password:     this.fb.control(null, [Validators.required]),
       cPassword:    this.fb.control(null, [Validators.required]),
-      gender:       this.fb.control(null, [Validators.required]),
+      gender:       this.fb.control('', [Validators.required]),
       profilePic:   this.fb.control(null),
       bio:          this.fb.control(null)
     })

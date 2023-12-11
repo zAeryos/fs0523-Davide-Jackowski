@@ -1,0 +1,14 @@
+<div class = "container mt-5">
+  <div class = "row">
+    <div class = "col-md-6 mx-auto">
+      <h5 class = "text-center">Login</h5>
+      <form>
+        <input type = "email" [(ngModel)] = "loginData.email"
+          name  = "email"     class = "form-control mt-3" placeholder = "Email">
+        <input type = "password" [(ngModel)] = "loginData.password"
+          name  = "password"  class = "form-control mt-3" placeholder = "Password">
+        <button (click)="save()" class = "btn btn-success mt-3">Login</button>
+      </form>
+    </div>
+  </div>
+</div>
